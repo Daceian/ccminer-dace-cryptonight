@@ -9,8 +9,7 @@ FTC donation address: 6s1mzQ21zxD8DSF3Gnyj73dN25XUdJMjQa
 
 ## Introduction
 
-This is a CUDA accelerated mining application for use with
-Monero, Electronium and other coins based on the Cryptonight algorithm.
+This is an optimized CPU mining application for use with Monero, Electronium and other coins based on the Cryptonight algorithm with no donation pool mining.
 
 THIS PROGRAM IS PROVIDED "AS-IS", USE IT AT YOUR OWN RISK!
 
