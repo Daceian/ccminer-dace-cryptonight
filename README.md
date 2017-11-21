@@ -1,5 +1,5 @@
 # ccminer-dace-cryptonight, a ccminer mod by tsiv and KlausT 
-and modified by Dace for uninterrupted CPU mining with no automatic donation pool redirections.
+and modified by Dace for uninterrupted CUDA CPU mining with no automatic donation pool redirections.
 
 If you find this tool useful and like to support its continued development,
 then consider a donation.
@@ -9,7 +9,7 @@ FTC donation address: 6s1mzQ21zxD8DSF3Gnyj73dN25XUdJMjQa
 
 ## Introduction
 
-This is an optimized CPU mining application for use with Monero, Electronium and other coins based on the Cryptonight algorithm with no donation pool mining.
+This is an optimized CUDA CPU mining application for use with Monero, Electronium and other coins based on the Cryptonight algorithm with no donation pool mining.
 
 THIS PROGRAM IS PROVIDED "AS-IS", USE IT AT YOUR OWN RISK!
 
