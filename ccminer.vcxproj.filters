@@ -230,4 +230,7 @@
       <Filter>Source Files\CUDA</Filter>
     </CudaCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart64_91.dll" />
+  </ItemGroup>
 </Project>

@@ -1,15 +1,23 @@
-# ccminer-dace-cryptonight, a ccminer mod by tsiv and KlausT 
-and modified by Dace for uninterrupted CUDA CPU mining with no automatic donation pool redirections.
+# ccminer-dace-cryptonight, a ccminer mod by tsiv, KlausT and Dace 
+Modified by Dace for uninterrupted CUDA 9.1 CPU mining with no automatic donation pool redirections.
 
-If you find this tool useful and like to support its continued development,
-then consider a donation.
+If you find this tool useful and like to support its continued development, then consider a donation to any of the relevant developers below.
 
-ETN donation address: etnjwVuF4zuC8q2zfxCX4RgdV7jNcM5pkZdDdC6GaTy68Qb4Wu9vfJwPd3ctp6mGFgfiYyoKn14BhPErDpFy8obD39rN9zHUPe
-FTC donation address: 6s1mzQ21zxD8DSF3Gnyj73dN25XUdJMjQa
+## Dace's donation addresses:
+* ETN donation address: etnjwVuF4zuC8q2zfxCX4RgdV7jNcM5pkZdDdC6GaTy68Qb4Wu9vfJwPd3ctp6mGFgfiYyoKn14BhPErDpFy8obD39rN9zHUPe
+* FTC donation address: 6s1mzQ21zxD8DSF3Gnyj73dN25XUdJMjQa
+
+## KlausT's donation addresses:
+* BTC: 1QHH2dibyYL5iyMDk3UN4PVvFVtrWD8QKp
+* BCH: 1AH1u7B4KtDTUBgmT6NrXyahNEgTac3fL7
+
+## tsiv's donation adresseses:
+* BTC: 1JHDKp59t1RhHFXsTw2UQpR3F9BBz3R3cs
+* XMR: 42uasNqYPnSaG3TwRtTeVbQ4aRY3n9jY6VXX3mfgerWt4ohDQLVaBPv3cYGKDXasTUVuLvhxetcuS16ynt85czQ48mbSrWX
 
 ## Introduction
 
-This is an optimized CUDA CPU mining application for use with Monero, Electronium and other coins based on the Cryptonight algorithm with no donation pool mining.
+This is an optimized CUDA 9.1 CPU mining application for use with Monero, Electronium and other coins based on the Cryptonight algorithm with no donation pool mining.
 
 THIS PROGRAM IS PROVIDED "AS-IS", USE IT AT YOUR OWN RISK!
 
@@ -71,13 +79,15 @@ THIS PROGRAM IS PROVIDED "AS-IS", USE IT AT YOUR OWN RISK!
 Notable contributors to this application are:
 
 Dace: 
-- some minor performance improvements to retry times and removal of automated pool donations
+- some minor performance improvements to retry times and removal of automated pool donations.
+- updated readme.md for optional manual donations by address if user chooses to do so and wants to further support development.
+- Updated code to support Cuda 9.1 from Cuda 9.0
 
 KlausT:
 - various fixes and optimizations
 
 tsiv: 
-- CUDA implementation for the Cryptonight algorithm.
+- CUDA 9.0 implementation for the Cryptonight algorithm.
 
 Christian Buchner, Christian H. (Germany): 
 - modifying the original pooler-cpuminer for use with CUDA.
@@ -88,5 +98,23 @@ Jeff Garzik, pooler + contributors:
 LucasJones:
  - JSON-RPC 2.0 handling and the Cryptonight C-code comes
    from his cpuminer fork, cpuminer-multi
+
+* Don't forget to support the original ccminer authors
+Christian Buchner and Christian H. This mod would not be
+here without their work on ccminer:
+
+* LTC donation address: LKS1WDKGED647msBQfLBHV3Ls8sveGncnm
+* BTC donation address: 16hJF5mceSojnTD3ZTUDqdRhDyPJzoRakM
+* YAC donation address: Y87sptDEcpLkLeAuex6qZioDbvy1qXZEj4
+* VTC donation address: VrjeFzMgvteCGarLw85KivBzmsiH9fqp4a
+* MAX donation address: mHrhQP9EFArechWxTFJ97s9D3jvcCvEEnt
+* DOGE donation address: DT9ghsGmez6ojVdEZgvaZbT2Z3TruXG6yP
+* HVC donation address: HNN3PyyTMkDo4RkEjkWSGMwqia1yD8mwJN
+* GRS donation address: FmJKJAhvyHWPeEVeLQHefr2naqgWc9ABTM
+* MYR donation address: MNHM7Q7HVfGpKDJgVJrY8ofwvmeugNewyf
+* JPC donation address: JYFBypVDkk583yKWY4M46TG5vXG8hfgD2U
+* SFR donation address: SR4b87aEnPfTs77bo9NnnaV21fiF6jQpAp
+* MNC donation address: MShgNUSYwybEbXLvJUtdNg1a7rUeiNgooK
+* BTQ donation address: 13GFwLiZL2DaA9XeE733PNrQX5QYLFsonS
 
 Source code is included to satisfy GNU GPL V3 requirements.

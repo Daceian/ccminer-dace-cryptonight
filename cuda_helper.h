@@ -83,4 +83,14 @@ __forceinline__ __device__ uint64_t ROTL64(const uint64_t value, const int offse
 #define ROTL64(x, n)        (((x) << (n)) | ((x) >> (64 - (n))))
 #endif
 
+// CUDA 9+ deprecated functions warnings (new mask param)
+#if CUDA_VERSION >= 9000 && __CUDA_ARCH__ >= 300
+ #undef __shfl
+ #define __shfl(var, srcLane, width)  __shfl_sync(0xFFFFFFFFu, var, srcLane, width)
+ #undef __shfl_up
+ #define __shfl_up(var, delta, width) __shfl_up_sync(0xFFFFFFFF, var, delta, width)
+ #undef __any
+ #define __any(p) __any_sync(0xFFFFFFFFu, p)
+ #endif
+
 #endif // #ifndef CUDA_HELPER_H

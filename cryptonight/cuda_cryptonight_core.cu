@@ -92,6 +92,12 @@ __global__ void cryptonight_core_gpu_phase2(uint32_t threads, int bfactor, int p
 	__shared__ uint32_t sharedMemory[1024];
 
 	cn_aes_gpu_init(sharedMemory);
+#if( __CUDA_ARCH__ < 300 )
+	extern __shared__ uint32_t shuffleMem[];
+	volatile uint32_t* sPtr = (volatile uint32_t*)(shuffleMem + (threadIdx.x & 0xFFFFFFFC));
+#else
+	uint32_t* sPtr = NULL;
+#endif
 	__syncthreads();
 
 	const int thread = (blockDim.x * blockIdx.x + threadIdx.x) >> 2;
